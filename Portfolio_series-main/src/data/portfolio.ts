@@ -4,6 +4,8 @@
  * Nothing here should be added unless it appears on the resume.
  */
 
+const assetUrl = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
@@ -23,10 +25,10 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/kummari-charan-teja-851a85249/',
     github: '',
   },
-  resumePdf: '/assets/Kummari_Charan_Teja_Resume.pdf',
+  resumePdf: assetUrl('assets/Kummari_Charan_Teja_Resume.pdf'),
   portrait: {
-    src: '/assets/portrait-720.webp',
-    srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
+    src: assetUrl('assets/portrait-720.webp'),
+    srcSet: `${assetUrl('assets/portrait-420.webp')} 420w, ${assetUrl('assets/portrait-720.webp')} 720w, ${assetUrl('assets/portrait-1100.webp')} 1100w`,
     alt: 'Portrait of Kummari Charan Teja',
   },
   interests: ['Autonomous Navigation', 'Robot Perception & Computer Vision', 'Robotics & Control Systems'],

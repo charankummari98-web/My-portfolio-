@@ -23,7 +23,7 @@ npm run build
 npm run preview
 ```
 
-The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host.
+The static site is written to `dist/` and can be deployed as-is to Vercel, Netlify, GitHub Pages or any static host. Public asset URLs use Vite's relative base so they work on GitHub Pages project URLs as well as root domains.
 
 ## Updating the content
 
